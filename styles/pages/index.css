@@ -1,0 +1,138 @@
+:root {
+  /* Colors */
+  --bg-clr: #d7bb96;
+  --bg-clr-dark: #22150f;
+  --btn-clr: #682e1a;
+}
+
+.main {
+  margin-top: 6rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #f8ddba, #ffedd148);
+  backdrop-filter: blur(15px);
+  margin: 1rem;
+  padding: 4rem 2.5rem 2.5rem 2.5rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(137, 139, 139, 0.5);
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(137, 139, 139, 0.5);
+  height: 18rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  text-align: center;
+  height: 4rem;
+  margin-bottom: 5px;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.product-rating-stars {
+  width: 10rem;
+  margin-right: 6px;
+}
+
+.product-rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 2rem;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+}

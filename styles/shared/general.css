@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+:root {
+  /* Colors */
+  --bg-clr: #d7bb9679;
+  --bg-card: #f8ddba;
+  --bg-clr-dark: #22150f;
+  --btn-clr: #682e1a;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* background-color: var(--bg-clr); */
+  background-image: url(../../images/bg-wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button, 
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-primary {
+  color: #fff;
+  background-color: var(--btn-clr);
+  border: 1px solid var(--bg-clr-dark);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(137, 139, 139, 0.5);
+  transition: all 200ms ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: #813c25;
+  border: 1px solid #3d271c;
+  box-shadow: none;
+}
+
+.button-secondary {
+  color: rgb(33, 33, 33);
+  background: white;
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(137, 139, 139, 0.5);
+}
+
+.button-secondary:hover {
+  background-color: rgb(247, 250, 250);
+  box-shadow: none;
+}
+
+/* Para limitar o texto a 2 linhas. Após isso, ... é adicionado. */
+.limit-text-to-2-lines {
+  color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

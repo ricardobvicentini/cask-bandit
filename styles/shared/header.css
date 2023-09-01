@@ -1,0 +1,150 @@
+:root {
+  /* Colors */
+  --bg-clr: #d7bb96;
+  --bg-clr-dark: #22150f;
+  --btn-clr: #682e1a;
+}
+
+header {
+  background-color: var(--bg-clr-dark);
+  /* backdrop-filter: blur(10px); */
+  color: #fff;
+  padding-inline: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  inset: 0;
+  height: 6rem;
+  z-index: 999;
+}
+
+.header-left-section {
+  width: 18rem;
+}
+
+@media (max-width: 800px) {
+  .header-left-section {
+    width: unset;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  border: 1px solid white;
+}
+
+.logo {
+  width: 10rem;
+  margin-top: 5px;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (width < 575px) {
+  .logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    height: 3.5rem;
+    margin-top: 5px;
+  }
+}
+
+.header-middle-section {
+  display: flex;
+  flex: 1;
+  max-width: 85rem;
+  margin-inline: 1rem;
+}
+
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 1.6rem;
+  height: 3.8rem;
+  padding-left: 1.5rem;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.search-button {
+  background-color: var(--bg-clr);
+  border: none;
+  width: 4.5rem;
+  height: 3.8rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  height: 2.2rem;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.header-right-section {
+  width: 18rem;
+  display: flex;
+  justify-content: end;
+  flex-shrink: 0;
+}
+
+.orders-link {
+  color: #fff;
+}
+
+.returns-text {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.orders-text {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cart-link {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  width: 5rem;
+}
+
+.cart-quantity {
+  width: 2.6rem;
+  text-align: center;
+  color: var(--bg-clr);
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 32px;
+}
+
+.cart-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+
