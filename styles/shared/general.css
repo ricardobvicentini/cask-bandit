@@ -26,7 +26,7 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* background-color: var(--bg-clr); */
+  background-color: var(--bg-clr);
   background-image: url(../../images/bg-wood.jpg);
   background-repeat: no-repeat;
   background-size: cover;
