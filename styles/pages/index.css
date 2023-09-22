@@ -60,13 +60,18 @@
   backdrop-filter: blur(15px);
   margin: 1rem;
   padding: 4rem 2.5rem 2.5rem 2.5rem;
-  border: 1px solid #fff;
+  border: 1px solid var(--btn-clr);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(137, 139, 139, 0.5);
+  transition: background-image 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+.product-container:hover {
+  background-image: linear-gradient(to bottom, #fce9d0, #fceed948);
+  border: 1px solid #fff;
 }
 
 .product-image-container {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +85,6 @@
 }
 
 .product-image {
-  border: 1px solid red;
   max-width: 100%;
   max-height: 100%;
 }
